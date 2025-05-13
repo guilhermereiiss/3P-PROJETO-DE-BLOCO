@@ -6,6 +6,26 @@ public class User {
 
     private int id;
     private String username;
+    private String CPF;
+    private String password;
+    private String email;
+    private String phone;
+    private PermissionLevel permissionLevel;
+
+    public User() {
+
+    }
+
+    public User(int id, String username, String CPF, String password, String email, String phone, PermissionLevel permissionLevel) {
+        this.id = id;
+        this.username = username;
+        this.CPF = CPF;
+        this.password = password;
+        this.email = email;
+        this.phone = phone;
+        this.permissionLevel = permissionLevel;
+    }
+
 
     public int getId() {
         return id;
@@ -63,10 +83,5 @@ public class User {
         this.CPF = CPF;
     }
 
-    private String CPF;
-    private String password;
-    private String email;
-    private String phone;
-    private PermissionLevel permissionLevel;
 
 }
